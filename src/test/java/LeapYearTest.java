@@ -11,11 +11,11 @@ public class LeapYearTest {
             "1999,false",
             "1996,true",
             "1900,false",
-            "2000, true"
+            "2000, true",
+            "2400, true"
     })
     void LeapYearShouldReturnTrueIfLeapYear(int input, boolean output) {
         LeapYear leapYear = new LeapYear();
         assertEquals(output, leapYear.isLeapYear(input));
     }
-
 }
